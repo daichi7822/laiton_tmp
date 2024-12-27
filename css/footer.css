@@ -1,0 +1,86 @@
+.footer {
+  background-color: #1c1c25;
+  position: relative;
+  font-family: serif;
+  padding-top: 100px;
+  z-index: 1;
+}
+.footer .contents {
+  display: flex;
+  justify-content: space-around;
+}
+.footer .contents .triangle {
+  display: inline-block;
+  width: 20px;
+  height: 0;
+  border-left: 14px solid #fff;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+.footer .contents h1, .footer .contents h2, .footer .contents p {
+  font-size: 16px;
+  color: white;
+}
+.footer .contents h1 {
+  margin: 10px 0;
+}
+.footer .contents h2 {
+  margin: 10px 0;
+}
+.footer .contents p {
+  padding-top: 0;
+  margin-left: 10px;
+}
+.footer p {
+  color: gray;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.footer .icons {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 30px auto 0;
+}
+.footer .icons a {
+  color: transparent;
+}
+.footer .icons img {
+  text-decoration: none;
+  width: 20px;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 910px) {
+  .footer {
+    background-color: #1c1c25;
+    font-family: serif;
+    padding-top: 40px;
+  }
+  .footer .contents {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80vw;
+  }
+  .footer .contents .triangle {
+    width: 10px;
+    border-left: 8px solid #fff;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+  }
+  .footer .contents h1, .footer .contents h2, .footer .contents p {
+    font-size: 10px;
+    color: white;
+  }
+  .footer .contents h2 {
+    margin: 10px 0;
+  }
+  .footer .contents p {
+    padding-top: 0;
+    margin: 0;
+  }
+  .footer p {
+    font-size: 10px;
+  }
+}/*# sourceMappingURL=footer.css.map */

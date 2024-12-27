@@ -1,0 +1,177 @@
+.header {
+  position: fixed;
+  width: 100vw;
+  height: 90px;
+  z-index: 2;
+}
+.header .logo {
+  width: 50px;
+  position: absolute;
+  top: 10%;
+  left: 7%;
+  transform: translateX(-50%);
+}
+.header nav {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background-image: url(../img/Wrapper.jpeg);
+  background-size: cover;
+  transition: 0.2s;
+  z-index: 3;
+}
+.header .btn:focus {
+  box-shadow: none;
+}
+.header .nav-var {
+  position: relative;
+  z-index: 4;
+  height: 70px;
+}
+.header #btn {
+  position: absolute;
+  display: block;
+  top: 30%;
+  right: 7vw;
+  transform: translateX(50%);
+  width: 30px;
+  height: 16px;
+  padding: 0;
+  border-radius: 0;
+  transition: 0s;
+}
+.header .btn-line {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 3px;
+  margin: 0 auto;
+  background-color: #fff;
+  transition: 0.2s;
+  opacity: 0.8;
+}
+.header .btn-line::before, .header .btn-line::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transition: 0.5s;
+}
+.header .btn-line::before {
+  transform: translateY(8px);
+}
+.header .btn-line::after {
+  transform: translateY(-8px);
+}
+.header .navigation.open {
+  top: 0;
+  right: 0;
+  overflow: hidden;
+}
+.header .btn-line.open {
+  background-color: transparent;
+}
+.header .btn-line.open::before, .header .btn-line.open::after {
+  content: "";
+  background-color: #fff;
+  opacity: 0.8;
+  transition: 0.2s;
+}
+.header .btn-line.open::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+.header .btn-line.open::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+.header ul {
+  text-align: center;
+  list-style: none;
+  padding: 70px 0 0 0;
+}
+.header ul a {
+  text-decoration: none;
+}
+.header ul li {
+  margin: 30px 0;
+  color: #fff;
+  font-size: 24px;
+}
+.header ul li:last-child {
+  margin-bottom: 10px;
+}
+.header ul p {
+  color: #fff;
+  font-size: 14px;
+}
+.header ul p a {
+  color: #fff;
+}
+
+.header-2 {
+  position: fixed;
+  width: 100vw;
+  height: 100px;
+  z-index: 1;
+}
+.header-2 a.reservation {
+  position: absolute;
+  top: 100%;
+  right: 7vw;
+  transform: translateX(50%);
+}
+.header-2 a.reservation img {
+  width: 50px;
+}
+.header-2 h1 {
+  color: white;
+  font-family: serif;
+  opacity: 0.8;
+  writing-mode: vertical-rl;
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: -30px;
+  position: absolute;
+  top: 0;
+  left: 7%;
+  transform: translate(-50%, 80%);
+}
+
+@media screen and (min-width: 1000px) {
+  .header .logo {
+    width: 100px;
+  }
+  .header #btn {
+    width: 50px;
+    height: 30px;
+  }
+  .header .btn-line {
+    width: 50px;
+    height: 6px;
+  }
+  .header .btn-line::before {
+    transform: translateY(14px);
+  }
+  .header .btn-line::after {
+    transform: translateY(-14px);
+  }
+  .header-2 a.reservation {
+    top: 180%;
+  }
+  .header-2 a.reservation img {
+    width: 100px;
+  }
+  .header-2 h1 {
+    font-size: 18px;
+    margin-bottom: -70px;
+    transform: translate(-50%, 100%);
+  }
+}/*# sourceMappingURL=header.css.map */

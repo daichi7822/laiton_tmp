@@ -1,0 +1,214 @@
+@charset "UTF-8";
+.wrapper {
+  background-image: url(../img/Wrapper.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+.wrapper .main {
+  width: 72%;
+  margin: 0 auto;
+  padding-top: 50px;
+  text-align: center;
+  z-index: 2;
+}
+.wrapper .main .pc-img {
+  display: none;
+}
+.wrapper .main .text {
+  background-color: #fff;
+  padding: 50px 0;
+  font-size: 10px;
+}
+.wrapper .main .text.gallery-text {
+  padding: 10px 0 0;
+}
+.wrapper .main .text .inner {
+  text-align: left;
+  max-width: 402px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.wrapper .main .text .inner .info-content {
+  margin: 20px 0;
+}
+.wrapper .main .text .inner .info-content p {
+  margin: 5px 0;
+}
+.wrapper .main .text .inner.gallery-inner {
+  max-width: 100%;
+  width: 100%;
+  padding: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.wrapper .main .text .inner.gallery-inner .gallery {
+  width: 49%;
+}
+.wrapper .main .text .inner.gallery-inner .gallery figure {
+  margin-bottom: 10px;
+}
+.wrapper .main .text .inner.gallery-inner .gallery img {
+  width: 100%;
+  height: 100%;
+}
+.wrapper .main .text .inner .sp-br {
+  display: block;
+}
+.wrapper .main .text .inner .pc-br {
+  display: none;
+}
+.wrapper .main .text .inner .reservation2 {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
+  margin: 0 auto;
+}
+.wrapper .main .text h1 {
+  font-size: 12px;
+}
+.wrapper .main .text.menu-text {
+  padding-top: 20px;
+}
+.wrapper .main .text.menu-text ul {
+  padding: 0;
+}
+.wrapper .main .text.menu-text span {
+  font-weight: bold;
+}
+.wrapper .main .text.boulangerie-menu {
+  padding: 20px 0;
+}
+.wrapper .main .text p {
+  margin: 20px 0;
+}
+.wrapper .main .text p.last-text {
+  margin: 0px;
+}
+.wrapper .main ul {
+  list-style: none;
+}
+.wrapper .main img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.wrapper .main .banner {
+  position: relative;
+}
+.wrapper .main .anchor {
+  background-color: #fff;
+}
+.wrapper .main .anchor .bottom {
+  border-bottom: 2px solid #000;
+  width: 4vw;
+  margin: 0 auto;
+}
+.wrapper .main .anchor h1 {
+  font-size: 20px;
+}
+.wrapper .main .anchor a {
+  display: block;
+}
+.wrapper .main .anchor .text {
+  position: relative;
+  height: 140px;
+  padding: 0;
+}
+.wrapper .main .anchor .text h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.wrapper .main .anchor .text h2 {
+  position: absolute;
+  width: 80%;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10px;
+}
+.wrapper .main .anchor.access {
+  padding: 20px 0;
+}
+.wrapper .main .anchor.access h1 {
+  margin-bottom: 20px;
+}
+.wrapper .main .anchor p {
+  font-size: 10px;
+  margin: 30px 0;
+}
+.wrapper .main .anchor a {
+  text-decoration: none;
+  color: #000;
+}
+.wrapper .main .partition {
+  height: 6vw;
+  background-color: transparent;
+}
+.wrapper.info-wrap {
+  padding-bottom: 100px;
+}
+
+@media screen and (min-width: 1000px) {
+  .wrapper .main {
+    padding-top: 200px;
+  }
+  .wrapper .main .sp-img {
+    display: none;
+  }
+  .wrapper .main .pc-img {
+    display: block;
+  }
+  .wrapper .main .text {
+    padding: 50px 0;
+    font-size: 16px;
+  }
+  .wrapper .main .text .inner {
+    max-width: 640px;
+  }
+  .wrapper .main .text .inner.gallery-inner {
+    max-width: 100%;
+  }
+  .wrapper .main .text .inner.gallery-inner .gallery {
+    width: 32.7%;
+  }
+  .wrapper .main .text .inner.gallery-inner .gallery img {
+    width: 100%;
+    height: 100%;
+  }
+  .wrapper .main .text .inner.concept-inner {
+    text-align: center;
+  }
+  .wrapper .main .text .inner .sp-br {
+    display: none;
+  }
+  .wrapper .main .text .inner .pc-br {
+    display: block;
+  }
+  .wrapper .main .text .inner .reservation2 {
+    font-size: 24px;
+  }
+  .wrapper .main .text h1 {
+    font-size: 18px;
+  }
+  .wrapper .main .banner p {
+    font-size: 16px;
+  }
+  .wrapper .main .anchor .text {
+    height: 300px;
+  }
+  .wrapper .main .anchor p {
+    font-size: 16px;
+  }
+  .wrapper .main .anchor .text h1 {
+    font-size: 60px;
+  }
+  .wrapper .main .anchor .text h2 {
+    bottom: 40px;
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
